@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Day Is The Last</title>
+</head>
+<body>
+
+    <h1>Every Day Is The Last</h1>
+
+    <div class="poem">
+        
+        {% autoescape false %}
+        {{ title }}
+        HA
+        {{ poem }}
+        {% endautoescape %}
+    </div>
+
+    <div class="archive">
+        {{ archive }}
+    </div>
+
+    <div class="footer"> Made by blahblahblah</div>
+    
+</body>
+</html>
+
+<!-- 
+<!doctype html>
+<h1>Every Day Is The Last</h1>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %} -->
